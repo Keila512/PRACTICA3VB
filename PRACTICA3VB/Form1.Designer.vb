@@ -19,8 +19,10 @@
             Me.dateTimePicker1 = New System.Windows.Forms.DateTimePicker()
             Me.textBox2 = New System.Windows.Forms.TextBox()
             Me.textBox3 = New System.Windows.Forms.TextBox()
-            Me.button1 = New System.Windows.Forms.Button()
+            Me.btnGuardar = New System.Windows.Forms.Button()
             Me.listView1 = New System.Windows.Forms.ListView()
+            Me.btnAlumno = New System.Windows.Forms.Button()
+            Me.btnEmpleado = New System.Windows.Forms.Button()
             Me.SuspendLayout()
             Me.label1.AutoSize = True
             Me.label1.Location = New System.Drawing.Point(43, 35)
@@ -62,23 +64,39 @@
             Me.textBox3.Name = "textBox3"
             Me.textBox3.Size = New System.Drawing.Size(247, 23)
             Me.textBox3.TabIndex = 7
-            Me.button1.Location = New System.Drawing.Point(609, 35)
-            Me.button1.Name = "button1"
-            Me.button1.Size = New System.Drawing.Size(75, 23)
-            Me.button1.TabIndex = 8
-            Me.button1.Text = "GUARDAR"
-            Me.button1.UseVisualStyleBackColor = True
-            AddHandler Me.button1.Click, AddressOf Me.button1_Click
+            Me.btnGuardar.Location = New System.Drawing.Point(609, 35)
+            Me.btnGuardar.Name = "btnGuardar"
+            Me.btnGuardar.Size = New System.Drawing.Size(118, 23)
+            Me.btnGuardar.TabIndex = 8
+            Me.btnGuardar.Text = "GUARDAR"
+            Me.btnGuardar.UseVisualStyleBackColor = True
+            AddHandler Me.btnGuardar.Click, AddressOf Me.button1_Click
             Me.listView1.Location = New System.Drawing.Point(27, 200)
             Me.listView1.Name = "listView1"
             Me.listView1.Size = New System.Drawing.Size(761, 214)
             Me.listView1.TabIndex = 9
             Me.listView1.UseCompatibleStateImageBehavior = False
+            Me.btnAlumno.Location = New System.Drawing.Point(609, 64)
+            Me.btnAlumno.Name = "btnAlumno"
+            Me.btnAlumno.Size = New System.Drawing.Size(155, 23)
+            Me.btnAlumno.TabIndex = 10
+            Me.btnAlumno.Text = "GUARDAR ALUMNO"
+            Me.btnAlumno.UseVisualStyleBackColor = True
+            AddHandler Me.btnAlumno.Click, AddressOf Me.btnAlumno_Click
+            Me.btnEmpleado.Location = New System.Drawing.Point(609, 93)
+            Me.btnEmpleado.Name = "btnEmpleado"
+            Me.btnEmpleado.Size = New System.Drawing.Size(155, 23)
+            Me.btnEmpleado.TabIndex = 11
+            Me.btnEmpleado.Text = "GUARDAR EMPLEADO"
+            Me.btnEmpleado.UseVisualStyleBackColor = True
+            AddHandler Me.btnAlumno.Click, AddressOf Me.btnEmpleado_Click
             Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0F, 15.0F)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.ClientSize = New System.Drawing.Size(800, 450)
+            Me.Controls.Add(Me.btnEmpleado)
+            Me.Controls.Add(Me.btnAlumno)
             Me.Controls.Add(Me.listView1)
-            Me.Controls.Add(Me.button1)
+            Me.Controls.Add(Me.btnGuardar)
             Me.Controls.Add(Me.textBox3)
             Me.Controls.Add(Me.textBox2)
             Me.Controls.Add(Me.dateTimePicker1)
@@ -101,7 +119,10 @@
         Private dateTimePicker1 As DateTimePicker
         Private textBox2 As TextBox
         Private textBox3 As TextBox
-        Private button1 As Button
+        Private btnGuardar As Button
         Private listView1 As ListView
+        Private btnAlumno As Button
+        Private btnEmpleado As Button
     End Class
+
 End Namespace
