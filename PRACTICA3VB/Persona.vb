@@ -5,7 +5,7 @@ Imports System.Text
 Imports System.Threading.Tasks
 
 Namespace My
-    Friend Class Persona
+    Friend MustInherit Class Persona
         Protected nombre As String
         Protected fechaNacimiento As DateTime?
 
